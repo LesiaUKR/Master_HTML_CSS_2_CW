@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 2 classwork</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- 2. embeded styles прописуються в тезі <head> між закриваючим і відкриваючим тегом style 
+        Вбудовану таблицю стилів неможливо використовувати повторно на інших сторінках і складно масштабувати та підтримувати.-->
+    <!-- <style>
+h1{
+color: tomato;
+}
+</style> -->
+  </head>
+  <body>
+    <!-- три способи підключення стилів:
+        1. Вбудовані стилі (inline styles)
+        2. вбудованої таблиці стилів (embedded stylesheet)
+        3. зовнішня таблиця стилів - Зовнішній CSS-код (external stylesheet)
+    -->
+    <!-- 1. інлайн стилі
+        мінуси: неможливо масштабувати, обмежені, специфічні, важко підтримувати
+    плюси: потрібні лише, щоб зробити динамічну анімацію за допомогою Java Script-->
+    <!-- <h1 style="color: tomato">Title</h1> -->
+    <h1 class="title" id="main-title">Title</h1>
+    <p class="description" id="primary-description">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, illo
+      sapiente ipsum corrupti vero natus numquam neque cumque ad aperiam
+      recusandae quaerat nam, quo animi unde magni est doloremque quia?
+    </p>
+    <p class="description" id="secondary-description">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, illo
+      sapiente ipsum corrupti vero natus numquam neque cumque ad aperiam
+      recusandae quaerat nam, quo animi unde magni est doloremque quia?
+    </p>
+<ul class="menu">
+    <li>
+        <a class="menu-link" href="https://www.google.com/">google</a>
+    </li>
+<li>
+        <a class="menu-link" href="">link-1</a>
+    </li>
+    <li>
+        <a class="menu-link" href="">link-2</a>
+    </li>
+ <li>
+        <a class="menu-link" href="">link-3</a>
+    </li>
+    <li>
+        <a class="menu-link" href="https://www.google.com/">google</a>
+    </li>
+</ul>
+    <ul class="secondary-menu">
+    <li>
+        <a class="menu-link" href="https://www.google.com/">google</a>
+    </li>
+<li>
+        <a class="menu-link" href="">link-1</a>
+    </li>
+    <li>
+        <a class="menu-link" href="">link-2</a>
+    </li>
+ <li>
+        <a class="menu-link" href="">link-3</a>
+    </li>
+    <li>
+        <a class="menu-link" href="https://www.google.com/">google</a>
+    </li>
+</ul>
+
+<ul>
+    <li><a href="">link-1</a>
+        <ul class="nav-list">
+            <li><a href="">sub-link-1</a></li>
+            <li><a href="">sub-link-2</a></li>
+            <li><a href="">sub-link-3</a></li>
+        </ul></li>
+    <li><a href="">link-2</a></li>
+    <li><a href="">link-3</a></li>
+    <li><a href="">link-4</a></li>
+</ul>
+
+<header class="header">
+    <ul class="navigation-list list">
+        <li class="navigation-list-item"><a class="navigation-list-link" href="">Home</a></li>
+        <li class="navigation-list-item"><a class="navigation-list-link" href="">About us</a></li>
+        <li class="navigation-list-item"><a  class="navigation-list-link"href="">Services</a></li>
+        <li class="navigation-list-item"><a  class="navigation-list-link"href="">Contacts</a></li>
+    </ul>
+</header>
+<section>
+    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorem 
+        quos provident alias inventore dolorum fugit laboriosam aperiam asperiores perspiciatis ratione enim atque, repellat labore fuga dolores! Accusantium, quis. Asperiores.</p>
+    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorem 
+        quos provident alias inventore dolorum fugit laboriosam aperiam asperiores perspiciatis ratione enim atque, repellat labore fuga dolores! Accusantium, quis. Asperiores.</p>
+    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorem 
+        quos provident alias inventore dolorum fugit laboriosam aperiam asperiores perspiciatis ratione enim atque, repellat labore fuga dolores! Accusantium, quis. Asperiores.</p>
+</section>
+  </body>
+</html>

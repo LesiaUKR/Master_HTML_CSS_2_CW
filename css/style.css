@@ -1,0 +1,205 @@
+/*
+універсальний селектор - зірочка
+селектор тегу (елемента)
+селектор id
+селектор класу
+селектор атрибуту
+селектор нащадка
+дочірній селектор
+*/
+
+
+/*
+універсальний селектор - зірочка - можна скидати дефолтні стилі від
+браузера
+*/
+/* * {
+    color: teal;
+} */
+
+/*
+селектор тегу (елемента) - найчастіше використовуються для скидання дефолтних
+стилів окремих видів тегів
+*/
+/* p {
+    color: tomato;
+}
+h1 {
+    color: tomato;
+} */
+/*
+селектор id - унікальний ідентифікатор - треба, щоб був унікальним для кожного елемента
+на сторінці - мінус - специфічні, потрібні лише, щоб 
+*/
+
+/* #main-title {
+    color: teal;
+}
+
+#primary-description,
+#secondary-description {
+    color: teal;
+} */
+
+/*
+селектор класу - найпопулярніший спосіб
+*/
+/* .description{
+color: tomato;
+} */
+
+/*
+селектор атрибуту
+*/
+/* 
+[href='https://www.google.com/']{
+    color: teal;
+} */
+
+/*
+селектор нащадка
+*/
+/* .menu-link {
+    font-size: 20px;
+font-weight: 400;
+}
+.menu .menu-link {
+        color: teal;
+}
+
+.secondary-menu .menu-link {
+color: tomato;
+} */
+
+/*
+дочірній селектор - застосовується ще рідше ніж селектор нащадка
+*/
+
+/* .nav-list > li {
+border: 1px solid black;
+} */
+
+/*
+каскадність - застосується той стиль, що нижче. Той що нижче,
+переб'є те що вище
+*/
+/* 
+.title {
+    color: teal;
+}
+
+.title {
+    color: tomato;
+} */
+
+/*
+
+специфічність - використовується 
+*/
+
+/* специфічність - 0010  */
+/* .title {
+    color: teal;
+} */
+/* специфічність - 0100  */
+/* #main-title {
+    color: tomato;
+} */
+
+/* специфічність - 0001  */
+/* h1 {
+    color: yellowgreen;
+} */
+
+/* специфічність - 0002  */
+/* body h1 {
+color: aqua;
+} */
+
+/* 
+текстові властивості можуть бути успадковані
+*/
+
+/* 
+теги <p> взяли колір від body, а потім від точечного description
+теги <a> не взяли колір від body, бо мають по дефолту колір від точечно для лінка a
+*/
+/* body {
+    font-size: 24px;
+    color: teal;
+}
+
+.description {
+    color:tomato;
+} */
+
+/* 
+псевдокласи
+:hover
+:focus - тільки на інтерактивних елементах: посилання, кнопки, елементи форм
+:active
+:visited
+*/
+
+/* 
+hover
+*/
+/* .navigation-list-link:hover {
+    color: #ffffff;
+    background-color: black;
+} */
+
+/* 
+focus
+*/
+/* .navigation-list-link:focus {
+    color: #ffffff;
+    background-color: black;
+} */
+
+/* 
+active - в момент натискання на інтерактивні елементи
+*/
+/* .navigation-list-link:active {
+    color: #ffffff;
+    background-color: black;
+} */
+
+/* 
+visited - тільки для посилань - використовується вкрай рідко
+*/
+/* .navigation-list-link:visited {
+    color: teal;
+} */
+
+/* 
+псевдоелементи тексту
+::first-line - перший рядок тексту
+::first-letter - перша літера тексту
+::selection - можна змінити виділення тексту
+*/
+
+.description {
+ margin-bottom: 20px;
+}
+
+.description::first-letter {
+font-size: 24px;
+color:tomato;
+}
+
+/* 
+це тільки для абзаца з класом description
+*/
+/* .description::selection{
+    font-size: 24px;
+    background-color: tomato;
+} */
+
+/* 
+це тільки для всіх елементів
+*/
+::selection {
+    font-size: 24px;
+    background-color: tomato;
+}
